@@ -6,9 +6,9 @@ tags:
   - Metabolomics
   - Pathway
 authors:
-  - name: First Author
-    orcid: 0000-0000-0000-0000
-    affiliation: 1
+  - name: Kozo Nishida
+    orcid: 0000-0001-8501-7319
+    affiliation: Tokyo University of Agriculture and Technology
   - name: Last Author
     orcid: 0000-0000-0000-0000
     affiliation: 2
