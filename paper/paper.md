@@ -1,6 +1,6 @@
 ---
-title: 'BioHackJP 2023 Report R1: linked data standardization with LLMs'
-title_short: 'BioHackJP 2023 LD-LLM'
+title: 'BioHackJP 2023 Report R1: Bridging Metabolomics IDs to Pathways'
+title_short: 'BioHackJP 2023 metabolomeid2pathwayid'
 tags:
   - Linked Data
   - Metabolomics
