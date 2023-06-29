@@ -9,9 +9,9 @@ authors:
   - name: Kozo Nishida
     orcid: 0000-0001-8501-7319
     affiliation: Tokyo University of Agriculture and Technology
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
-    affiliation: 2
+  - name: Shuya Ikeda
+    orcid: 0000-0002-1357-5159
+    affiliation: Database Center for Life Science
 affiliations:
   - name: First Affiliation
     index: 1
