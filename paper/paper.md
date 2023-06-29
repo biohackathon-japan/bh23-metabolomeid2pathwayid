@@ -35,8 +35,6 @@ authors_short: First Author \emph{et al.}
 
 Targeted and non-targeted metabolomic analysis using mass spectrometry is used to understand metabolic processes taking place in a wide variety of organisms, from prokaryotes, plants, and fungi to animals and humans. Non-targeted approaches allow us to detect as many metabolites as possible at once, find significant metabolic changes among them, and perform new characterizations of metabolites in biological samples. However, biological interpretation of large, complex data sets, such as those in non-target approaches, is difficult using metabolomics analysis alone (i.e., quantification of metabolites in samples). The foremost approach to address that challenge would be data integration, which projects the quantitative values of the aforementioned metabolites onto a network of biochemicals (called as pathway).
 
-
-
 # Outcomes
 
 To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
