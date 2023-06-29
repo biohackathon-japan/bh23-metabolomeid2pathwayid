@@ -33,11 +33,9 @@ authors_short: First Author \emph{et al.}
 
 # Background
 
-The field of bioinformatics plays a crucial role in enabling researchers to extract meaningful insights from the vast amount of biological data generated today. With advancements in technology and the availability of large-scale datasets, it has become increasingly important to develop standardized approaches for representing and integrating biological information. Linked data, a method for publishing structured data on the web, has emerged as a promising solution for facilitating the integration and interoperability of diverse biological data sources.
+Targeted and non-targeted metabolomic analysis using mass spectrometry is used to understand metabolic processes taking place in a wide variety of organisms, from prokaryotes, plants, and fungi to animals and humans. Non-targeted approaches allow us to detect as many metabolites as possible at once, find significant metabolic changes among them, and perform new characterizations of metabolites in biological samples. However, biological interpretation of large, complex data sets, such as those in non-target approaches, is difficult using metabolomics analysis alone (i.e., quantification of metabolites in samples). The foremost approach to address that challenge would be data integration, which projects the quantitative values of the aforementioned metabolites onto a network of biochemicals (called as pathway).
 
-The BioHackathon 2023, held in Japan, provided an ideal platform for researchers and bioinformatics enthusiasts to collaborate and explore innovative solutions to address the challenges in the field. Our project focused on the application of Linked Data and Large Language Models (LLMs) to standardize biological data and enhance its accessibility and usability.
 
-LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabilities in understanding and generating human-like text. Leveraging the power of LLMs, we aimed to automate the process of extracting relevant biological terms from unstructured text and mapping them to existing ontology terms. Ontologies, which are hierarchical vocabularies of terms and their semantic relationships, provide a standardized framework for organizing and categorizing biological concepts.
 
 # Outcomes
 
