@@ -67,9 +67,9 @@ where {
 
 ![image](https://github.com/biohackathon-japan/bh23-metabolomeid2pathwayid/assets/12192/ffd29f0a-ee24-4a26-8a4e-3f5a46337ed6)
 
-Therefore, a mechanism to "align the IDs of scattered namespaces in a pathway into InChIKey" is needed.
-It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (URL) by using a federated query, but at present the query is difficult to write, slow performance, and impractical.
-There is also an id conversion system called BridgeDb (CITE) in the WikiPathways ecosystem, but it is a relational database using Apache Derby, which is also not suitable for the alignment.
+Therefore, a system to align the IDs of scattered namespaces in a pathway into InChIKey is needed for Metabolomics.
+It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (https://sparql.wikipathways.org/) by using a federated query, but at present the query is difficult to write, slow performance.
+There is also an id conversion system called BridgeDB [@van2010bridgedb] in the WikiPathways ecosystem, but the BridgeDB is not involved the WikiPathways SPARQL endpoint.
 
 # Outcomes
 
