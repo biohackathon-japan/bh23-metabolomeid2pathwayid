@@ -47,7 +47,7 @@ The foremost approach to address that challenge would be data integration, which
 Metabolome raw data are quantified using preprocessing software such as MS-DIAL [@tsugawa2020lipidome] and data for peak annotation called "library".
 Most of the metadata in the library contains InChIKey [@heller2015inchi], and an information infrastructure that serves as an ID bridge between InChIKey and pathways is necessary for data integration between metabolome quantification values and pathways.
 
-| ![graphical_abstract](graphical_abstract.png) | 
+| ![Figure 1. Graphical Abstract. In this section we will be presenting the id mapping difficulty between metabolome and pathway to interpret metabolomics data.](graphical_abstract.png) | 
 |:--:| 
 | *Figure 1. Graphical Abstract. In this section we will be presenting the id mapping difficulty between metabolome and pathway to interpret metabolomics data.* |
 
