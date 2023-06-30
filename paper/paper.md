@@ -70,7 +70,7 @@ where {
 Therefore, a system to align the IDs of scattered namespaces in a pathway into InChIKey is needed for Metabolomics.
 It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (https://sparql.wikipathways.org/) by using a federated query, but at present the query is difficult to write and slow performance.
 There is also an id conversion system called BridgeDB [@van2010bridgedb] in the WikiPathways ecosystem, but the BridgeDB is not involved the WikiPathways SPARQL endpoint.
-In addition, there are services that convert metabolite IDs such as CTS [@CITEME] , Metaboanalyst [@CITEME] Metabolite ID Conversion and MetaCyc [@CITEME] Metabolite Translation Service, but they are not open and are not suitable for system integration that seamlessly compensates for the missing functionality in WikiPathways.
+In addition, there are services that convert metabolite IDs such as CTS [@wohlgemuth2010chemical] , Metaboanalyst [@pang2021metaboanalyst] Metabolite ID Conversion and MetaCyc [@caspi2020metacyc] Metabolite Translation Service, but they are not open and are not suitable for system integration that seamlessly compensates for the missing functionality in WikiPathways.
 
 # Outcomes
 
