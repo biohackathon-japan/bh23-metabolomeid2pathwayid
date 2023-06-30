@@ -51,9 +51,23 @@ Most of the metadata in the library contains InChIKey [@heller2015inchi], and an
 |:--:| 
 | *Figure 1. Graphical Abstract. In this section we will be presenting the id mapping difficulty between metabolome and pathway to interpret metabolomics data.* |
 
-WikiPathways [@martens2021wikipathways] is one of the major pathway databases and has a Cytoscape (CITE) App (CITE), which can help facilitate interpretation of metabolomics data if WikiPathways provides an "InChIKey list of metabolites included in each pathway".
-However, the data resource for metabolites in WikiPathways is not limited to one, and multiple IDs may be mixed in one pathway (Figure 2).
-Therefore, a mechanism to "align the IDs of scattered namespaces in a pathway into a single namespace" is needed.
+WikiPathways [@martens2021wikipathways] is one of the major pathway databases and has a Cytoscape [@shannon2003cytoscape] App [@kutmon2014wikipathways],
+which can import the pathway into Cytoscape and help visualization and interpretation of the omics data on the pathway.
+However, the data resource for metabolites in WikiPathways is not limited to one, and multiple IDs may be mixed in one pathway.
+Furthermore, InChIKey is not the main ID.
+
+```
+select str(?datasource) as ?source count(distinct ?identifier) as ?count
+where {
+  ?mb a wp:Metabolite ;
+    dc:source ?datasource ;
+    dc:identifier ?identifier .
+} order by desc(?count)
+```
+
+![image](https://github.com/biohackathon-japan/bh23-metabolomeid2pathwayid/assets/12192/ffd29f0a-ee24-4a26-8a4e-3f5a46337ed6)
+
+Therefore, a mechanism to "align the IDs of scattered namespaces in a pathway into InChIKey" is needed.
 It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (URL) by using a federated query, but at present the query is difficult to write, slow performance, and impractical.
 There is also an id conversion system called BridgeDb (CITE) in the WikiPathways ecosystem, but it is a relational database using Apache Derby, which is also not suitable for the alignment.
 
