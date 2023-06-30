@@ -100,7 +100,7 @@ We also added pairs between SwissLipids and UniProt. This relationship is betwee
 
 # Future work
 
-
+The current NAVIGATE mode interface of TogoID requires users to obtain conversion results for each individual conversion path. It would be beneficial for WikiPathways users to have a mechanism that allows them to select multiple paths based on their specific needs and obtain conversion results for all selected paths. Additionally, through discussions with a developer of WikiPathways, we are considering implementing a direct link from WikiPathways to TogoID, enabling WikiPathways users to easily access TogoID's NAVIGATE mode. In such a scenario, it would be convenient if the WikiPathways ID could be automatically filled in the TogoID input field. As TogoID currently lacks this functionality, we will consider implementing this using URL parameters.
 
 ## Acknowledgements
 
