@@ -12,6 +12,12 @@ authors:
   - name: Shuya Ikeda
     orcid: 0000-0002-1357-5159
     affiliation: Database Center for Life Science
+  - name: Hiromasa Ono
+    orcid: 0000-0001-8675-963X
+    affiliation: Database Center for Life Science
+  - name: Alexander Pico
+    orcid: 0000-0001-5706-2163
+    affiliation: Gladstone Institutes
 affiliations:
   - name: First Affiliation
     index: 1
