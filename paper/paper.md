@@ -68,8 +68,9 @@ where {
 ![image](https://github.com/biohackathon-japan/bh23-metabolomeid2pathwayid/assets/12192/ffd29f0a-ee24-4a26-8a4e-3f5a46337ed6)
 
 Therefore, a system to align the IDs of scattered namespaces in a pathway into InChIKey is needed for Metabolomics.
-It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (https://sparql.wikipathways.org/) by using a federated query, but at present the query is difficult to write, slow performance.
+It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (https://sparql.wikipathways.org/) by using a federated query, but at present the query is difficult to write and slow performance.
 There is also an id conversion system called BridgeDB [@van2010bridgedb] in the WikiPathways ecosystem, but the BridgeDB is not involved the WikiPathways SPARQL endpoint.
+In addition, there are services that convert metabolite IDs such as CTS [@CITEME] , Metaboanalyst [@CITEME] Metabolite ID Conversion and MetaCyc [@CITEME] Metabolite Translation Service, but they are not open and are not suitable for system integration that seamlessly compensates for the missing functionality in WikiPathways.
 
 # Outcomes
 
@@ -81,7 +82,7 @@ Subsequently, we XXXed XXX to do XXX.
 
 # Future work
 
-Moving forward, there are several areas of potential future work to enhance our project's linked data standardization with LLMs. First, exploring advanced LLMs and optimizing computational efficiency can improve performance. Additionally, expanding ontology mapping to cover more domains and integrating external data sources would increase the scope of our standardization efforts. Validating and evaluating results against gold-standard datasets, involving domain experts, and developing a user-friendly interface for researchers to interact with the pipelines are crucial next steps. These future endeavors will refine and advance our methodology, increasing its impact and adoption in bioinformatics.
+
 
 ## Acknowledgements
 
