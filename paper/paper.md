@@ -72,11 +72,29 @@ It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (http
 There is also an id conversion system called BridgeDB [@van2010bridgedb] in the WikiPathways ecosystem, but the BridgeDB is not involved the WikiPathways SPARQL endpoint.
 In addition, there are services that convert metabolite IDs such as CTS [@wohlgemuth2010chemical] , Metaboanalyst [@pang2021metaboanalyst] Metabolite ID Conversion and MetaCyc [@caspi2020metacyc] Metabolite Translation Service, but they are not open and are not suitable for system integration that seamlessly compensates for the missing functionality in WikiPathways.
 
+TogoID is an ID conversion service developed by Database Center for Life Science (DBCLS). It covers a broad range of life science databases of various categories such as genes, proteins, compounds, diseases, pathways, and more. TogoID not only enables the conversion of IDs between entities with equivalent meanings but also provides associations with various biological meanings, such as "compounds belonging to a pathway." One of the unique features of TogoID is its multi-step conversion capability, allowing users to convert IDs to target IDs via other types of IDs. TogoID offers a "NAVIGATE" mode, which displays possible paths between input IDs and target IDs.
+
+Prior to this hackathon, only ChEBI, ChEMBL compound, and PubChem compound were directly linked to InChIKey in TogoID. With TogoID's multi-step conversion functionality, it was possible to convert InChIKey to HMDB via ChEMBL Compound. However, this approach resulted in the loss of HMDB entries that lacked corresponding ChEMBL Compound entries. In fact, out of the 217,897 entries in HMDB v5.0, only 6,040 could be mapped to ChEMBL Compound entries.
+In this hackathon, we aimed to obtain the pair between HMDB and InChIKey from the data provided by HMDB and add it to TogoID, ensuring that all HMDB entries can be converted to and from InChIKey. Furthermore, additional links between HMDB and other relevant databases were incorporated into TogoID. Additionally, links to other databases related to metabolomics analysis were included in TogoID to enhance the database relationships and provide a foundation for analysis.
+The NAVIGATE mode can be helpful for WikiPathways users. If a user intends to retrieve all compounds belonging to a pathway entry and to output as InChIKey, the user can input WikiPathways IDs to TogoID and specify InChIKey as the conversion destination. Regardless of the ID under which the compound is represented in WikiPathways, the user can get all the paths through them to be converted to InChIKey. Before the hackathon, TogoID had only UniProt and ChEBI as the IDs for components within WikiPathways. To expand its coverage, additional commonly used IDs in WikiPathways for representing pathway components were incorporated into TogoID.
+
 # Outcomes
 
-To achieve our objectives, we conducted XXX.
-We XXXed XXX.
-Subsequently, we XXXed XXX to do XXX.
+During the BioHackathon 2023, we added the pairs shown in Table 1 to TogoID.
+
+Table 1
+|Source|Target|
+|--|--|
+|WikiPathways | HMDB, NCBI Gene, LIPID MAPS|
+|HMDB | InChIKey, ChEBI, PDB CCD, PubChem Compound|
+|PubChem Pathway | Reactome Pathway, Pathbank, WikiPathways|
+|SwissLipids | InChIKey, UniProt |
+|LIPID MAPS | ChEBI, InChIKey,  SwissLipids|
+
+The direct conversion between WikiPathways and NCBI Gene, HMDB, and LIPID MAPS became available on TogoID. Also, InChIKey pairs with HMDB, SwissLipids, and LIPID MAPS were added.
+These enable users to obtain one specific type of ID belonging to pathway entries via different paths by the NAVIGATE mode of TogoID. For example, when a user inputs WikiPathways IDs and select InChIKey as the conversion destination, paths of WikiPathways - ChEBI - InChIKey, WikiPathways - HMDB - InChIKey, WikiPathways - LIPID MAPS - InChIKey are displayed and the user can download each conversion result.
+
+We also added pairs between SwissLipids and UniProt. This relationship is between lipids and enzymes that metabolize the lipids.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
