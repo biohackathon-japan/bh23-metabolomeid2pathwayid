@@ -51,6 +51,11 @@ Most of the metadata in the library contains InChIKey [@heller2015inchi], and an
 |:--:| 
 | *Figure 1. Graphical Abstract. In this section we will be presenting the id mapping difficulty between metabolome and pathway to interpret metabolomics data.* |
 
+WikiPathways (CITE) is one of the major pathway databases and has a Cytoscape App (CITE), which can help facilitate interpretation of metabolomics data if WikiPathways provides an "InChIKey list of metabolites included in each pathway".
+However, the data resource for metabolites in WikiPathways is not limited to one, and multiple IDs may be mixed in one pathway (Figure 2).
+Therefore, a mechanism to "align the IDs of scattered namespaces in a pathway into a single namespace" is needed.
+It is possible to achieve the ID alignment in WikiPathways SPARQL endpoint (URL) by using a federated query, but at present the query is difficult to write, slow performance, and impractical.
+There is also an id conversion system called BridgeDb (CITE) in the WikiPathways ecosystem, but it is a relational database using Apache Derby, which is also not suitable for the alignment.
 
 # Outcomes
 
