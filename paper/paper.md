@@ -73,9 +73,9 @@ There is also an id conversion system called BridgeDB [@van2010bridgedb] in the 
 
 # Outcomes
 
-To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
-
-Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
+To achieve our objectives, we conducted XXX.
+We XXXed XXX.
+Subsequently, we XXXed XXX to do XXX.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
